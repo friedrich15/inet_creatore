@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  
+  - var header = ["Name", "Description", "Picture"]
+
+  #main-content
+    button(onclick="add_row()") add row
+    table#product-table
+      tr.h-row
+        each i in header
+          th(class= i)= i
+            button(onclick="copy_all($(this))") copy
+
+      tr(class="p-row initial", contenteditable)
+        each i in header
+          td(onclick="pop_text($(this))", class= i)
+      - for (var h=0; h<=12; h++) {
+        tr(class="p-row", contenteditable)
+          each i in header  
+            td(onclick="pop_text($(this))", class= i)
+      - }      

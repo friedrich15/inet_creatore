@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#product-table {
+  border-collapse: collapse;
+}
+#product-table tr {
+  height: 1.8em;
+}
+#product-table td, th {
+  text-align: left;
+  padding: .4em;
+  border: .1em solid #ccc;
+}
+
+.td-edit {
+  border: .1em dashed #ccc;
+  display: none;
+}
+
+.active {
+  background-color: #eee;
+  line-height: 1;
+}
